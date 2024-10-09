@@ -18,8 +18,8 @@ public class CameraMovement : MonoBehaviour
         if (canRotate)
         {
             // Conseguimos la rotacion del mouse
-            xRotation += Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
-            yRotation += Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
+            xRotation += Input.GetAxis("Mouse X") * rotationSpeed;
+            yRotation += Input.GetAxis("Mouse Y") * rotationSpeed;
 
             // Agregamos el limite de rotacion en Y
             yRotation = Mathf.Clamp(yRotation, minRotation, maxRotation);
